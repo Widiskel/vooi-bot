@@ -157,20 +157,22 @@ Anyway i create new telegram channel just for sharing bot or airdrop, join here
    ```
    npm i telegram@2.22.2
    ```
-5. Navigate to `vooi-bot` directory.
-6. Make new folder named `accounts`.
-7. Navigate to `config` folder and rename `config_tmp.js` to `config.js` also `proxy_list_tmp.js` to `proxy_list.js`.
-8. Now Open and configure `config.js`.
-9. Now back to the `vooi-bot` folder
-10. To start the app open your `Command Prompt` or `Power Shell` again and run
+5. Navigate to `vooi-bot` directory
+   ```cd vooi-bot```
+7. Make new folder named `accounts`.
+   ```mkdir accounts```
+9. Copy file `config.js` and `proxy_list.js`
+   ```copy config\config_tmp.js config\config.js  && config\proxy_list_tmp.js config\proxy_list.js```
+10. Now Open and configure `config.js` & `proxy_list.js` (if use proxies)
+    ```notepad config\config.js``` to setting config
+    ```notepad config\proxy_list.js``` to add proxies
+    you can also use notepad (right click => open with .. => select `Notepad`)
+12. To start the app open your `Command Prompt` or `Power Shell` again and run
     ```
     npm run start
     ```
-11. If Any error happen contains config or proxy, Copy `config` folder to `app` folder
-12. Finally run with
-    ```
-    node app/index.js
-    ```
+    if an error occurs, use
+    ```node app\index.js```
 
 ## Update Bot
 
